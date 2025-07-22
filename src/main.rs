@@ -9,7 +9,7 @@ use yellowstone_grpc_proto::geyser::{
 };
 
 
-// 配置信息 - 你需要修改这里的内容
+// 配置信息
 const GRPC_ENDPOINT: &str = "https://api.rpcpool.com:443";
 
 const AUTH_TOKEN: &str = "token";
@@ -18,7 +18,7 @@ const PING_INTERVAL_SECS: u64 = 30; // 每30秒发送一次心跳保持连接
 
 #[tokio::main]
 async fn main() -> Result<()> {
-    // 初始化日志系统，
+   
     tracing_subscriber::fmt::init();
     info!("Solana gRPC 监听程序启动");
 
