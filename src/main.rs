@@ -11,7 +11,7 @@ use yellowstone_grpc_proto::geyser::{
 
 // 配置信息 - 你需要修改这里的内容
 const GRPC_ENDPOINT: &str = "https://api.rpcpool.com:443";
-// 在这里填入你的 token，获取方式见教程第五步
+
 const AUTH_TOKEN: &str = "token";
 const PING_INTERVAL_SECS: u64 = 30; // 每30秒发送一次心跳保持连接
 
